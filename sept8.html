@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head><title>Arithmetic Operations</title>
+
+</head>
+<body>
+<script>
+function add()
+{
+var x=parseInt(document.getElementById("num1").value);
+var y=parseInt(document.getElementById("num2").value);
+document.getElementById("res").innerHTML=x+y;
+}
+function difference()
+{
+var x=parseInt(document.getElementById("num1").value);
+var y=parseInt(document.getElementById("num2").value);
+document.getElementById("res").innerHTML=x-y;
+}
+function product()
+{
+var x=parseInt(document.getElementById("num1").value);
+var y=parseInt(document.getElementById("num2").value);
+document.getElementById("res").innerHTML=x*y;
+}
+function divide()
+{
+var x=parseInt(document.getElementById("num1").value);
+var y=parseInt(document.getElementById("num2").value);
+document.getElementById("res").innerHTML=x/y;
+}
+</script>
+NUM 1:
+<input type="number" value="" id="num1"><br>
+NUM 2:
+<input type="number" value="" id="num2"><br>
+<input type="submit" value="ADD" onclick="return add()">
+<input type="submit" value="SUBTRACT" onclick="return difference()">
+<input type="submit" value="MULTIPLY" onclick="return product()">
+<input type="submit" value="DIVIDE" onclick="return divide()"><br>
+RESULT:
+<span id="res"></span>
+</body>
+</html>
